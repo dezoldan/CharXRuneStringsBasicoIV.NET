@@ -4,10 +4,10 @@
     {
         static void Main(string[] args)
         {
-            //🐂
-            string str = "🐂.\u0000";
-            PrintChars.Print(str);
-            CountChar.ContaCaracteres(str);            
+            string str = "𐒻𐓟";
+            PrintChars.Print(str);            
+            CharXRune.CountLetters(str);
+            CharXRune.CountLetter2(str);
         }       
     }
 }      

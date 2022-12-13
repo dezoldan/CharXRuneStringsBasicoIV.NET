@@ -8,7 +8,7 @@ namespace StringsBasico
         public static void ContaCaracteres(string s)
         {
             StringInfo si = new(s);
-            Console.WriteLine($"A string contém: { si.LengthInTextElements} elementos de exibição, " +
+            Console.WriteLine($"=> A string contém: { si.LengthInTextElements} elementos de exibição, " +
                 $"e o comprimento da string é: {s.Length}.");
         }
     }
