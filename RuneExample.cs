@@ -1,18 +1,19 @@
-
 using System.Text;
-
-public class RuneExample{
-    
-    // Saber quantas letras tem a string.
-    public static int CountLetters(string s)
+namespace StringsBasico
+{
+    public class RuneExample
     {
-        int letterCount = 0;
-        foreach (Rune rune in s.EnumerateRunes())
+        // Saber quantas letras tem a string.
+        public static int CountLetters(string s)
         {
-            if (Rune.IsLetter(rune))
-            { letterCount++; }
-        }
+            int letterCount = 0;
+            foreach (Rune rune in s.EnumerateRunes())
+            {
+                if (Rune.IsLetter(rune))
+                { letterCount++; }
+            }
 
-        return letterCount;
+            return letterCount;
+        }
     }
 }

@@ -1,11 +1,14 @@
-public class PrintCategoria
+namespace StringsBasico
 {
-    // Retorna a categoria de cada objeto Char presente na string.
-    public static void PrintChars3(string s)
+    public class PrintCategoria
     {
-        foreach (var item in s)
+        // Retorna a categoria de cada objeto Char presente na string.
+        public static void PrintChars3(string s)
         {
-            Console.WriteLine("'{0}' : {1}", item, char.GetUnicodeCategory(item));
+            foreach (var item in s)
+            {
+                Console.WriteLine("'{0}' : {1}", item, char.GetUnicodeCategory(item));
+            }
         }
     }
 }

@@ -1,14 +1,17 @@
-public class PrintChars
+namespace StringsBasico
 {
-    // Exibe o comprimento da string, e;
-    // Os pontos de código unicode UTF-16 que são os objetos do tipo Char.
-    public static void Print(string s)
+    public class PrintChars
     {
-        Console.WriteLine($"\"{s}\".Length = {s.Length}");
-        for (int i = 0; i < s.Length; i++)
+        // Exibe o comprimento da string, e;
+        // Os pontos de código unicode UTF-16 que são os objetos do tipo Char.
+        public static void Print(string s)
         {
-            Console.WriteLine($"s[{i}] = '{s[i]}' ('\\u{(int)s[i]:x4}')");
+            Console.WriteLine($"\"{s}\".Length = {s.Length}");
+            for (int i = 0; i < s.Length; i++)
+            {
+                Console.WriteLine($"s[{i}] = '{s[i]}' ('\\u{(int)s[i]:x4}')");
+            }
+            Console.WriteLine();
         }
-        Console.WriteLine();
     }
 }
