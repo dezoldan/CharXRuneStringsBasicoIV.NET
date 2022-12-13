@@ -21,6 +21,7 @@ namespace StringsBasico
         }
 
         // Saber quantas letras tem a string com Char.
+        // Obs: Objetos Char são pontos de código unicode UTF-16 e não reconhecem pares alternativos.
         public static void CountLetter2(string s)
         {
             int letterCount2 = 0;
